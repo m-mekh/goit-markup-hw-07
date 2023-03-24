@@ -1,0 +1,80 @@
+@media screen and (min-width: 767px) {
+  .container {
+    max-width: 768px;
+  }
+
+  @media (min-width: 768px) {
+    .hero {
+      width: 768px;
+      height: 436px;
+      background-image: url(/images/tb-1x-bg.jpg);
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/tb-1x-bg.jpg);
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(/images/tb-2x-bg.jpg);
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/tb-2x-bg.jpg);
+    }
+  }
+
+  .about-item {
+    margin-right: 24px;
+    width: calc((100% - 72px) / 2);
+  }
+
+  .about-social-link {
+    visibility: hidden;
+  }
+
+  .about-item-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: left;
+    color: #2e2f42;
+  }
+
+  .about-item-subscribe {
+    width: 351px;
+    height: 72px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+
+    letter-spacing: 0.02em;
+
+    color: #434455;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  .about-content {
+    justify-content: left;
+  }
+  .section-team {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .team-item {
+    width: calc((100% - 72px) / 2);
+  }
+  .team-item {
+    margin-bottom: 64px;
+  }
+
+  .team-social-list {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}

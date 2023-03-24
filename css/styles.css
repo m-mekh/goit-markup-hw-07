@@ -16,7 +16,8 @@ body {
 }
 
 .container {
-  width: 1158px;
+  /* width: 1158px; */
+  width: 100%;
   padding: 0 15px;
   margin: auto;
 }
@@ -221,8 +222,8 @@ img {
   margin: auto;
   text-align: center;
   display: flex;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   background-image: url(../images/header-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -240,23 +241,24 @@ img {
   text-align: center;
 
   font-weight: 700;
-  font-size: 56px;
+  font-size: 36px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: #ffffff;
 
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 
-  width: 496px;
-  height: 120px;
+  width: 320px;
+  height: 80px;
 }
 
 .hero-btn {
   color: #ffffff;
   background-color: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 
   padding: 16px 32px;
   min-width: 169px;
@@ -344,8 +346,8 @@ img {
 }
 
 .about {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .about-container {
@@ -356,13 +358,14 @@ img {
 
 .about-list {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 72px;
 }
 
 .about-item {
-  width: 264px;
+  width: 396px;
   flex-direction: column;
   align-items: flex-start;
-  margin-right: 24px;
 }
 
 .about-item:nth-child(4n) {
@@ -391,20 +394,25 @@ img {
 }
 
 .about-item-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+
+  text-align: center;
   letter-spacing: 0.02em;
-  color: var(--item-title-color);
+  text-transform: capitalize;
+  color: #2e2f42;
   margin-bottom: 8px;
 }
 
 .about-item-subscribe {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--text-subscribe-color);
+  color: #434455;
 }
 
 .gallery {
@@ -447,15 +455,18 @@ img {
   background: #f4f4fd;
   display: flex;
   text-align: center;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
+.team-container {
+}
 .team-list {
   margin-right: 0 auto;
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
+  row-gap: 64px;
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -506,7 +517,8 @@ img {
 }
 
 .team-item {
-  width: calc((100% - 72px) / 4);
+  width: 100%;
+  /* width: calc((100% - 72px) / 4); */
 }
 
 .team-social-list {

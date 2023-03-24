@@ -1,0 +1,36 @@
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 428px;
+  }
+}
+
+.about-item {
+  height: 96px;
+}
+.about-container {
+  justify-content: center;
+}
+.about-content {
+  justify-content: center;
+  align-items: center;
+}
+
+.about-social-link {
+  visibility: hidden;
+}
+.hero {
+  width: 428px;
+  height: 432px;
+  background-image: url(/images/mob-1x-bg.jpg);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/mob-1x-bg.jpg);
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(/images/mob-2x-bg.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/mob-2x-bg.jpg);
+  }
+}
+
+.hero-title {
+}

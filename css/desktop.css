@@ -1,0 +1,68 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1158px;
+  }
+
+  @media (min-width: 1200px) {
+    .hero {
+      width: 1440px;
+      height: 600px;
+      background-image: url(/images/desk-1x-bg.jpg);
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/desk-1x-bg.jpg);
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(/images/desk-2x-bg.jpg);
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/desk-2x-bg.jpg);
+    }
+  }
+
+  .about-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .about-social-link {
+    visibility: visible;
+  }
+
+  .about-item-title {
+    width: 264px;
+    height: 24px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    color: #2e2f42;
+  }
+  .about-item-subscribe {
+    width: 264px;
+    height: 72px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+
+    letter-spacing: 0.02em;
+
+    color: #434455;
+  }
+
+  .gallery,
+  .section-team,
+  .customers {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .team-item {
+    width: calc((100% - 72px) / 4);
+  }
+}
