@@ -74,30 +74,19 @@ img {
 }
 
 .header {
-  display: flex;
-  background-color: #ffffff;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  text-decoration: none;
-  padding: 32px 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  position: relative;
+  padding-top: 16px;
 
-  box-sizing: border-box;
-  align-items: center;
-  border: 1px solid #e7e9fc;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  padding-bottom: 14px;
 }
 
-.header-container {
+.header-navigation {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-/* .header-nav {
+.header-nav {
   margin-right: 0 auto;
   display: flex;
   align-items: center;
@@ -108,7 +97,12 @@ img {
   color: var(--item-title-color);
   text-decoration: none;
   width: 261px;
-} */
+  margin-bottom: 150px;
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 200px; */
+}
 
 .logo {
   text-decoration: none;
@@ -135,33 +129,25 @@ img {
 }
 
 .header-list {
-  display: flex;
-  margin-left: 76px;
-  gap: 24px;
-}
-
-.header-list :not(:last-child) {
-  margin-right: 0;
+  width: 151px;
 }
 
 .header-item {
   margin-bottom: 40px;
 }
+
 .header-link {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 40px;
-  /* identical to box height, or 111% */
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
 
   letter-spacing: 0.02em;
   text-transform: capitalize;
 
-  /* NAVY BLUE */
-
   color: #2e2f42;
 
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
 }
 
 .current {
@@ -181,30 +167,32 @@ img {
 }
 
 .header-address {
-  margin-left: auto;
+  margin-bottom: 48px;
 }
 
 .header-contacts {
   font-style: normal;
-  display: flex;
 }
 
 .header-mail {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
   letter-spacing: 0.02em;
-  color: var(--text-adress-color);
-  text-decoration: none;
+
+  color: #434455;
+  justify-content: end;
 }
 
 .header-tel {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
   letter-spacing: 0.02em;
-  color: var(--text-adress-color);
-  text-decoration: none;
+
+  color: #434455;
 }
 
 .header-link:hover,
@@ -214,16 +202,52 @@ img {
 .header-mail:focus,
 .header-tel:focus {
   color: var(--hover-focus-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
 }
 
 .header-link:active {
   color: #2e2f42;
 }
 
-.header-contacts .contact + .contact {
-  margin-left: 40px;
+.header-social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+  gap: 56px;
+  width: 328px;
+  transition: color;
 }
 
+.header-social-item {
+  width: 40px;
+  height: 40px;
+}
+
+.header-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(77, 90, 229, 1);
+}
+
+.header-social-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.header-social-icon {
+  fill: #fff;
+}
+
+.header-social-link:active {
+  background-color: var(--hover-focus-color);
+}
 .mob-navigation-menu {
   display: flex;
   width: 100%;
@@ -385,6 +409,59 @@ img {
 .icon-modal-btn {
   width: 8px;
   height: 8px;
+}
+
+/*MOBILE BTN*/
+
+.menu-hamburger {
+  display: flex;
+  /* position: absolute; */
+  top: 24px;
+  right: 24px;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #2e2f42;
+  background: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header-nav-wrap {
+  position: fixed;
+  display: flex;
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+
+  right: 0;
+  top: 0;
+  padding-top: 80px;
+  padding-right: 35px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  flex-direction: column;
+  z-index: 999;
+}
+
+.menu-close {
+  display: flex;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #2e2f42;
+  background: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .about {

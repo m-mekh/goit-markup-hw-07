@@ -3,13 +3,58 @@
     max-width: 768px;
   }
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     .hero {
       width: 768px;
       height: 436px;
       background-image: url(/images/tb-1x-bg.jpg);
       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/tb-1x-bg.jpg);
     }
+
+    .header-list {
+      display: flex;
+      margin-left: 76px;
+      gap: 24px;
+    }
+
+    .header-link {
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 40px;
+
+      letter-spacing: 0.02em;
+      text-transform: capitalize;
+
+      color: #2e2f42;
+
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+    .header-contacts {
+      font-style: normal;
+      display: flex;
+    }
+
+    .header-address {
+      margin-left: auto;
+    }
+
+    .header-nav-wrap {
+      background-color: transparent;
+      width: unset;
+      position: static;
+      height: unset;
+    }
+
+    .menu-close {
+      display: none;
+    }
+    .menu-hamburger {
+      display: none;
+    }
+  }
+  .header-social-item {
+    display: none;
   }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {

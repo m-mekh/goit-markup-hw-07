@@ -2,6 +2,28 @@
   .container {
     max-width: 428px;
   }
+
+  .header-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+  }
+  .menu-hamburger {
+    display: flex;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #2e2f42;
+    background: #e7e9fc;
+  }
   .about-item {
     height: 96px;
   }
@@ -36,6 +58,91 @@
 }
 
 @media screen and (max-width: 767px) {
+  .is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .menu-hamburger {
+    border: none;
+    background-color: transparent;
+  }
+
+  .header-list {
+    margin-top: 56px;
+  }
+  .header-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .header-link {
+    font-weight: 700;
+    font-size: 36px;
+  }
+  /* .header-nav {
+    display: none;
+  } */
+  .header-list {
+    margin-top: 56px;
+  }
+  .header-tel {
+    font-weight: 700;
+    font-style: 26px;
+  }
+  .header-tel:active {
+    color: var(--hover-focus-color);
+  }
+
+  .mobile-header-btn {
+    display: flex;
+    top: 24px;
+    right: 24px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #2e2f42;
+    background: #e7e9fc;
+    margin-left: auto;
+  }
+  .header-address {
+    display: none;
+  }
+  .nav-list {
+    display: none;
+  }
+
+  .mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 24px 40px 40px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: opacity 250ms;
+  }
+  .header-item {
+    margin-bottom: 56px;
+  }
+
+  .header-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .header-link {
+    font-weight: 700;
+    font-size: 36px;
+  }
+  .header-link:active {
+    color: var(--hover-focus-color);
+  }
+
   .customers-item {
     width: calc((100% - 32px) / 2);
   }

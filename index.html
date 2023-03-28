@@ -20,36 +20,100 @@
   <body>
     <header class="header">
       <div class="container header-container">
-        <nav class="header-nav">
+        <nav class="header-navigation">
           <a class="logo" href="./index.html"
             ><span class="logo-first">WEB</span><span class="logo-second">STUDIO</span></a
           >
-          <ul class="header-list list">
+          <ul class="header-list nav-list list">
             <li class="header-item"><a class="header-link current link" href="./index.html">Studio</a></li>
             <li class="header-item"><a class="header-link link" href="./portfolio.html">Portfolio</a></li>
             <li class="header-item"><a class="header-link link" href="">Contacts</a></li>
           </ul>
-        </nav>
 
+          <button type="button" class="menu-hamburger" data-mobile-open>
+            <svg width="32" heigh-closet="22">
+              <use class="icon-hamburger" href="./images/icons.svg#icon-icon-menu"></use>
+            </svg>
+          </button>
+        </nav>
         <address class="header-address">
           <ul class="header-contacts list">
+            <li class="contact"><a class="header-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+
             <li class="contact">
               <a class="header-mail link" href="mailto:info@devstudio.com"> info@devstudio.com </a>
             </li>
-            <li class="contact"><a class="header-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
           </ul>
         </address>
+        <div class="backdrop is-hidden" data-mobile>
+          <div class="mobile">
+            <button type="button" class="mobile-header-btn" data-mobile-close>
+              <svg class="icon-modal-btn">
+                <use href="./images/icons.svg#icon-close-btn" width="8" height="8"></use>
+              </svg>
+            </button>
+
+            <nav class="header-nav">
+              <ul class="header-list list">
+                <li class="header-item"><a class="header-link current link" href="./index.html">Studio</a></li>
+                <li class="header-item"><a class="header-link link" href="./portfolio.html">Portfolio</a></li>
+                <li class="header-item"><a class="header-link link" href="">Contacts</a></li>
+              </ul>
+            </nav>
+
+            <div>
+              <address class="header-address-mobile">
+                <ul class="header-contacts list">
+                  <li class="contact"><a class="header-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+
+                  <li class="contact">
+                    <a class="header-mail link" href="mailto:info@devstudio.com"> info@devstudio.com </a>
+                  </li>
+                </ul>
+              </address>
+              <ul class="header-social-list list">
+                <li class="header-social-item">
+                  <a href="" class="header-social-link link">
+                    <svg class="header-social-icon" width="40" height="40">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="header-social-item">
+                  <a href="" class="header-social-link link">
+                    <svg class="header-social-icon" width="40" height="40">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="header-social-item">
+                  <a href="" class="header-social-link link">
+                    <svg class="header-social-icon" width="40" height="40">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="header-social-item">
+                  <a href="" class="header-social-link link">
+                    <svg class="header-social-icon" width="40" height="40">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main>
-      <!-- Hero section -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-btn button" data-modal-open>Order Service</button>
         </div>
-      </section> -->
-      <!-- <section class="about">
+      </section>
+      <section class="about">
         <div class="container about-container">
           <ul class="about-list list">
             <li class="about-item">
@@ -106,7 +170,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- <section class="gallery">
         <div class="container gallery-container">
           <h2 class="gallery-title">What are we doing</h2>
@@ -329,7 +393,7 @@
       </section> -->
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <div class="footer-text">
           <a class="footer-logo" href="./index.html"
@@ -388,7 +452,7 @@
           </div>
         </form>
       </div>
-    </footer>
+    </footer> -->
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -446,5 +510,11 @@
 
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
