@@ -658,11 +658,6 @@ img {
   color: var(--text-subscribe-color);
 }
 
-.team-item {
-  width: 100%;
-  /* width: calc((100% - 72px) / 4); */
-}
-
 .team-social-list {
   display: flex;
   justify-content: center;

@@ -257,16 +257,24 @@
   padding-bottom: 96px;
 }
 
-.team-list {
+.team-container .team-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 24px;
+  row-gap: 64px;
+}
+/* .team-list {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 0px;
   gap: 24px;
   justify-content: center;
-}
+} */
 
 .team-item {
-  width: calc((100% - 24px) / 2);
+  margin: 0;
 }
 
 .team-social-list {
