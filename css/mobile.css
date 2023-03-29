@@ -1,4 +1,4 @@
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
     max-width: 428px;
   }
@@ -24,17 +24,33 @@
     color: #2e2f42;
     background: #e7e9fc;
   }
+
+  .about-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: calc((100% - 24px) / 2); */
+  }
+
   .about-item {
+    flex-basis: calc((100% - 72px) / 4);
     height: 96px;
   }
   .about-container {
     justify-content: center;
   }
   .about-content {
-    justify-content: center;
-    align-items: center;
+    width: 396px;
+    height: 96px;
   }
 
+  .about-item-subscribe {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
   .about-social-link {
     visibility: hidden;
   }
@@ -42,9 +58,10 @@
   .hero {
     width: 428px;
     height: 432px;
-    background-image: url(/images/mob-1x-bg.jpg);
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/mob-1x-bg.jpg);
+    background-image: url(../images/mob-1x-bg.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/mob-1x-bg.jpg);
   }
+
   .footer-container {
     display: block;
   }
@@ -52,7 +69,7 @@
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url(/images/mob-2x-bg.jpg);
+    background-image: url(../images/mob-2x-bg.jpg);
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/mob-2x-bg.jpg);
   }
 }
@@ -61,6 +78,17 @@
   .is-hidden {
     opacity: 0;
     pointer-events: none;
+  }
+
+  .backdrop {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity var(--basic-transition);
   }
 
   .menu-hamburger {
@@ -110,8 +138,14 @@
   .header-address {
     display: none;
   }
-  .nav-list {
+  .header-list {
     display: none;
+  }
+  .header-list-mobile {
+  }
+  .is-hidden {
+    opacity: 0;
+    pointer-events: none;
   }
 
   .mobile {
@@ -143,6 +177,20 @@
     color: var(--hover-focus-color);
   }
 
+  .gallery {
+    display: none;
+  }
+
+  .about-social-link {
+    display: none;
+  }
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
   .customers-item {
     width: calc((100% - 32px) / 2);
   }
@@ -150,8 +198,109 @@
     width: 110px;
     height: 56px;
   }
+
   .customers-item-link {
     width: 190px;
     height: 88px;
+  }
+
+  .footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    display: flex;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-bottom: 96px;
+  }
+
+  .footer-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-logo {
+    width: 115px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    justify-content: center;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .title-subscribe {
+    display: flex;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    justify-content: center;
+    letter-spacing: 0.02em;
+
+    color: #ffffff;
+
+    margin-bottom: 16px;
+  }
+
+  .contact-form {
+    padding-left: 16px;
+    width: 398px;
+    height: 40px;
+    border: 1px solid hsl(0, 0%, 30%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2e2f42;
+  }
+
+  .contact-form-field {
+    width: 398px;
+    height: 40px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+  }
+
+  .contact-form-field:nth-child(1) {
+    padding-top: 0;
+  }
+
+  .form-subscribe {
+    width: 398px;
+    height: 136px;
+    background: #2e2f42;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-subscribe-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe-btn {
+    position: relative;
+    display: flex;
+    width: 165px;
+    height: 40px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 16px;
   }
 }
