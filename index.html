@@ -194,7 +194,25 @@
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <img src="./images/team1.jpg" alt="foto Mark Guerrero" width="264" />
+              <picture>
+                <source
+                  srcset="./images/mob-team1-1x.jpg 1x, ./images/mob-team1-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+
+                <source
+                  srcset="./images/tab-team1-1x.jpg 1x, ./images/tab-team1-2x.jpg 2x"
+                  media="(max-width: 1199px)"
+                />
+
+                <source
+                  srcset="./images/desk-team1-1x.jpg, ./images/desk-team1-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <img src="./images/team1.jpg" alt="foto Mark Guerrero" width="264" />
+              </picture>
+
               <div class="team-content">
                 <h3 class="team-item-title">Mark Guerrero</h3>
                 <p class="team-item-subscribe">Product Designer</p>
