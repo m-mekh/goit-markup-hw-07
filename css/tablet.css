@@ -327,25 +327,22 @@
     width: 40px;
     height: 40px;
   }
-}
 
-.footer {
-  padding-top: 96px;
-  padding-bottom: 96px;
-}
+  .footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
 
-.footer-container {
-  width: 768px;
-  margin-left: auto;
-  margin-right: auto;
-}
+  .footer-container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 565px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-.footer-text {
-  width: 264px;
-}
-
-.footer-container {
-  width: 565px;
-  flex-direction: row;
-  flex-wrap: wrap;
+  .footer-text {
+    width: 264px;
+  }
 }
