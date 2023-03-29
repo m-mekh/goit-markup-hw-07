@@ -291,15 +291,11 @@
   .customers-list {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 24px;
-
-    width: 552px;
-    height: 88px;
-
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
     row-gap: 72px;
-    margin: auto;
   }
   .customers-item {
     display: flex;
@@ -338,9 +334,14 @@
   padding-bottom: 96px;
 }
 
+.footer-container {
+  width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .footer-text {
-  padding: 0;
-  display: flex;
+  width: 264px;
 }
 
 .footer-container {
