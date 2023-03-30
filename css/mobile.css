@@ -10,7 +10,7 @@
     height: 70px;
   }
   .menu-hamburger {
-    display: flex;
+    /* display: flex;
     position: absolute;
     top: 24px;
     right: 24px;
@@ -22,7 +22,13 @@
     border-radius: 50%;
     background-color: transparent;
     color: #2e2f42;
-    background: #e7e9fc;
+    background: #e7e9fc; */
+
+    width: 32px;
+    height: 32px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
   }
 
   .hero-title {
@@ -73,6 +79,8 @@
   }
 
   .hero {
+    text-align: center;
+    margin: auto;
     width: 428px;
     height: 432px;
     background-image: url(../images/mob-1x-bg.jpg);

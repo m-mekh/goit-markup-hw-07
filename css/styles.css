@@ -902,9 +902,9 @@ img {
 
 .footer-container {
   display: block;
-  width: 428px;
-  height: 662px;
-  padding: 96px 0;
+  /* width: 428px;
+  height: 662px; */
+  /* padding: 96px 0; */
 }
 
 .footer-text {
