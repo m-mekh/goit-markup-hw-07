@@ -202,9 +202,6 @@ img {
 .header-mail:focus,
 .header-tel:focus {
   color: var(--hover-focus-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 40px;
 }
 
 .header-link:active {
@@ -339,17 +336,22 @@ img {
 }
 
 .hero-btn {
+  display: inline-block;
   color: #ffffff;
   background-color: #4d5ae5;
+  font-weight: 500;
+  font-size: 16px;
+  min-width: 169px;
+  height: 56px;
+  /* margin-top: 72px; */
+  margin-bottom: 112px;
+  line-height: 1.5;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-
-  padding: 16px 32px;
-  min-width: 169px;
-  flex-direction: row;
-  text-align: center;
-  border: none;
-  transition: background-color var(--transition-dur-func);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:focus,
