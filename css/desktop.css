@@ -43,15 +43,24 @@
     align-items: flex-start;
     padding: 0px;
 
-    position: absolute;
+    margin-right: 76px;
+
     width: 115px;
     height: 24px;
   }
 
   .header-list {
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
 
-    gap: 24px;
+    position: absolute;
+    width: 261px;
+    height: 52px;
+    left: 40%;
+    transform: translate(-50%);
   }
 
   .header-link {
