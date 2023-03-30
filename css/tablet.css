@@ -198,7 +198,7 @@
 }
 
 .about {
-  margin-bottom: 96px;
+  /* margin-bottom: 96px; */
 }
 .about-content {
   width: 356px;
@@ -223,10 +223,6 @@
 .about-list .about-item {
   margin: 0;
   width: calc((100% - 30px) / 2);
-}
-.about-item {
-  width: calc((100% - 48px) / 3);
-  margin-left: 24px;
 }
 
 .about-social-link {
