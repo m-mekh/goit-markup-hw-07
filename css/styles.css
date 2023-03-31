@@ -75,6 +75,8 @@ img {
 
 .header {
   position: relative;
+  width: auto;
+  border-bottom: 1px solid #e7e9fc;
   /* padding-top: 16px;
   padding-bottom: 14px; */
 }
@@ -501,7 +503,6 @@ img {
 }
 
 .about-item {
-  width: 396px;
   height: 96px;
   align-items: flex-start;
 
@@ -555,6 +556,8 @@ img {
   letter-spacing: 0.02em;
 
   color: #434455;
+  text-align: left;
+  margin-top: 8px;
 }
 
 .gallery {
