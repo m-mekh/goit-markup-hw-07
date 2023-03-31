@@ -320,10 +320,10 @@
     text-decoration: none;
   }
 
-  .form-subscribe-wrapper {
+  /* .form-subscribe-wrapper {
     display: flex;
     background-color: transparent;
-  }
+  } */
 }
 
 @media screen and (max-width: 1198px) {
