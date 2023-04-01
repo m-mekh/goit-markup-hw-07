@@ -37,13 +37,9 @@
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tb-2x-bg.jpg);
       }
     }
-    .hero {
-      width: 768px;
-      height: 436px;
 
-      background-repeat: no-repeat;
-      background-size: cover;
-      margin: auto;
+    .hero-conainer {
+      width: 100%;
     }
 
     .hero-title {
