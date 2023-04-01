@@ -220,7 +220,7 @@
     text-decoration: none;
   }
   .mob-tel:active {
-    color: #2e2f42;
+    color: var(--hover-focus-color);
     font-weight: 700;
     font-size: 36px;
   }
