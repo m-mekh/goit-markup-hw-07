@@ -89,7 +89,7 @@
     color: #2e2f42;
   }
 
-  .header-list :not(:last-child) {
+  .header-list:not(:last-child) {
     margin-right: 0;
   }
   .current {
