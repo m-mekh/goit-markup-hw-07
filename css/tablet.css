@@ -1,6 +1,6 @@
 @media screen and (min-width: 767px) {
   .container {
-    max-width: 768px;
+    width: 768px;
     padding-right: 15px;
     padding-left: 15px;
     margin: 0 auto;
@@ -18,7 +18,7 @@
       justify-content: space-between;
       align-items: center;
       padding-top: 24px;
-      padding-bottom: 24px;
+      /* padding-bottom: 24px; */
     }
     .header-navigation {
       display: flex;
@@ -210,6 +210,8 @@
     /* margin-bottom: 96px; */
   }
   .about-content {
+    justify-content: left;
+
     width: 356px;
     height: 120px;
   }
@@ -266,10 +268,6 @@
     order: 1;
     align-self: stretch;
     flex-grow: 0;
-  }
-
-  .about-content {
-    justify-content: left;
   }
 
   .section-team {

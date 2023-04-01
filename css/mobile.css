@@ -208,6 +208,23 @@
     margin-top: auto;
     justify-content: space-between;
   }
+
+  .mob-tel {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #434455;
+    text-decoration: none;
+  }
+  .mob-tel:active {
+    color: #2e2f42;
+    font-weight: 700;
+    font-size: 36px;
+  }
+
   .header-link {
     font-weight: 700;
     font-size: 36px;
