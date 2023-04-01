@@ -190,6 +190,17 @@
     }
   }
 
+  .gallery {
+    display: flex;
+  }
+
+  .gallery-container {
+    max-width: 1158px;
+    padding: 0;
+  }
+
+  .gallery-list {
+  }
   .about-container {
     display: flex;
     width: 1128px;
