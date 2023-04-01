@@ -60,7 +60,6 @@
     .logo {
       margin-right: 120px;
       width: 115px;
-      height: 22px;
       justify-content: center;
       padding-bottom: 24px;
     }
@@ -102,7 +101,6 @@
 
     .header-link {
       display: flex;
-      width: 66px;
       height: 24px;
 
       font-family: 'Roboto';
