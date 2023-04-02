@@ -10,20 +10,6 @@
     height: 70px;
   }
   .menu-hamburger {
-    /* display: flex;
-    position: absolute;
-    top: 24px;
-    right: 24px;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background-color: transparent;
-    color: #2e2f42;
-    background: #e7e9fc; */
-
     width: 32px;
     height: 32px;
     border: none;
@@ -58,6 +44,42 @@
     text-transform: capitalize;
   }
 
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    padding: 72px 24px 24px;
+
+    background-color: #fcfcfc;
+
+    border-radius: 4px;
+  }
+
+  .modal-form {
+    margin: 0 auto;
+    padding: auto;
+  }
+
+  .form-title {
+    margin-top: 0;
+  }
+  .form-input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    background-color: #fcfcfc;
+    height: 40px;
+    margin: 0;
+    padding-left: 50px;
+  }
+
+  .modal-form-field {
+    color: #8e8f99;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+  }
   .about {
     padding: 96px 0;
   }
