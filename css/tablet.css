@@ -192,6 +192,14 @@
     display: none;
   }
 
+  .modal {
+    padding: 72px 24px 24px;
+  }
+
+  .form-title {
+    margin-top: 0;
+  }
+
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero {
       padding-top: 112px;
