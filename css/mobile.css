@@ -154,7 +154,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
-    transition: opacity var(--basic-transition);
+    transition: opacity var(--transition-dur-func);
   }
 
   .menu-hamburger {
