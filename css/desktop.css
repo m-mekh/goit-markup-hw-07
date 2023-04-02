@@ -5,7 +5,6 @@
     margin: 0 auto;
   }
 
-  .gallery,
   .section-team,
   .customers {
     padding-top: 120px;
@@ -188,6 +187,8 @@
 
   .gallery {
     display: flex;
+    padding-top: 0;
+    padding-bottom: 120px;
   }
 
   .gallery-container {
