@@ -698,6 +698,12 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 
   color: #2e2f42;
 }
@@ -1211,7 +1217,7 @@ textarea {
   align-items: center;
   padding: 0px;
   margin-bottom: 24px;
-  width: 360px;
+  /* width: 360px; */
   height: 16px;
   left: 540px;
   top: 544px;
@@ -1267,6 +1273,7 @@ textarea {
 }
 
 .form-link {
+  display: flex;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3;
@@ -1275,7 +1282,7 @@ textarea {
   text-decoration-line: underline;
 
   color: #4d5ae5;
-  height: 16px;
+  /* height: 16px; */
 }
 
 .form-link-name {
