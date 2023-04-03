@@ -43,7 +43,7 @@
 
   .header-social-list {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 40px;
     margin-top: 48px;
   }

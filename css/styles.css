@@ -1245,7 +1245,7 @@ textarea {
 
   width: 16px;
   height: 16px;
-  border: 1.25px solid #2e2f42;
+  /* border: 1.25px solid #2e2f42; */
   border-radius: 2px;
   cursor: pointer;
   margin-right: 8px;
@@ -1263,6 +1263,7 @@ textarea {
 }
 
 .form-policy-text {
+  display: inline;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.2;
